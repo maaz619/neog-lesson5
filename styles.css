@@ -3,6 +3,7 @@
     --custom-grey: #374151;
 }
 body,h1{
+    height: 100%;
     margin: 0;
 }
 input::-webkit-input-placeholder {
