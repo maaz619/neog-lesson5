@@ -4,7 +4,7 @@ var createDiv = document.querySelector(".output-text");
 
 var textInput = document.querySelector("#input-area");
 
-var serverURL = "https://api.funtranslations.com/translate/minion.json?text=";
+var serverURL = "	https://api.funtranslations.com/translate/valyrian.json?text=";
 
 function getTranslatedURL(text) {
   return serverURL + text;
