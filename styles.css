@@ -1,9 +1,12 @@
+*{
+    box-sizing: border-box;
+}
+
 :root{
     --custom-blue:#60A5FA;
     --custom-grey: #374151;
 }
 body,h1{
-    height: 100%;
     margin: 0;
 }
 input::-webkit-input-placeholder {
@@ -11,10 +14,8 @@ input::-webkit-input-placeholder {
     line-height: 1.5em;
 }
 #input-area{
-    margin-top: 1rem;
+    width: 100%;
     border: 1px solid var(--custom-grey);
-    border-radius: 0.5rem;
-    text-decoration: none;
     padding: 1rem;
     
 }
@@ -30,11 +31,11 @@ textarea:focus{
     color: var(--custom-grey);
 }
 .output-text{
-    margin: auto;
-    height: 200px;
-    width: 400px;
+    width: 100%;
+    min-height: 15vh;
     border: 1px solid black;
     overflow: scroll;
+    padding: 1rem;
 }
 .navigation{
     height: 7rem;
@@ -46,16 +47,19 @@ textarea:focus{
     padding: 2.5rem;
 }
 .container-center{
+    display: block;
+    padding: 3rem;
     max-width: 600px;
     margin: auto;
-    text-align: center;
 }
 .non-bullet{
     list-style: none;
     text-align: center;
 }
 .footer{
-    margin-top: 3rem;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
     text-align: center;
     padding: 1rem;
     background-color: var(--custom-blue);
@@ -66,4 +70,7 @@ textarea:focus{
 }
 .footer ul{
     padding: 0;
+}
+a{
+    text-decoration: none;
 }
